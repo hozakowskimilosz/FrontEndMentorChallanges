@@ -1,0 +1,93 @@
+:root {
+  --p-bright-orange: hsl(31, 77%, 52%);
+  --p-dark-cyan: hsl(184, 100%, 22%);
+  --p-very-dark-cyan: hsl(179, 100%, 13%);
+
+  --n-transparent-white-p: hsla(0, 0%, 100%, 0.75);
+  --n-very-light-gray-bg-h-b: hsl(0, 0%, 95%);
+}
+
+body {
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+}
+
+.card {
+  display: flex;
+  border-radius: 5rem;
+}
+
+.section-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2.5rem;
+  padding: 3rem;
+  max-width: 20rem;
+}
+
+.sedans {
+  background-color: var(--p-bright-orange);
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+}
+
+.suvs {
+  background-color: var(--p-dark-cyan);
+}
+
+.luxury {
+  background-color: var(--p-very-dark-cyan);
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+
+.icon-container {
+  max-width: 5rem;
+}
+
+.icon-container img {
+  width: 100%;
+}
+
+.section-title {
+  font-family: "Big Shoulders Display", cursive;
+  color: var(--n-very-light-gray-bg-h-b);
+  font-size: 3rem;
+}
+
+.section-description {
+  font-family: "Lexend Deca", sans-serif;
+  color: var(--n-transparent-white-p);
+  line-height: 1.8rem;
+  margin-bottom: 3rem;
+}
+
+.more-btn {
+  background-color: var(--n-very-light-gray-bg-h-b);
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 1.1rem 2rem;
+  border-radius: 20%/50%;
+  border: 0.2rem solid var(--n-very-light-gray-bg-h-b);
+  transition: background-color 250ms;
+}
+
+.sedans .more-btn {
+  color: var(--p-bright-orange);
+}
+
+.suvs .more-btn {
+  color: var(--p-dark-cyan);
+}
+
+.luxury .more-btn {
+  color: var(--p-very-dark-cyan);
+}
+
+.more-btn:hover {
+  background-color: transparent;
+  color: var(--n-very-light-gray-bg-h-b);
+}
